@@ -10,4 +10,11 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
+#########################
+# split file load
+#########################
+source ~/.zsh/000_general.zsh
+source ~/.zsh/100_prompt.zsh
+source ~/.zsh/200_aliases.zsh
+source ~/.zsh/300_env.zsh
+source ~/.zsh/400_function.zsh
